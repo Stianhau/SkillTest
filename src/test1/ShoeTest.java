@@ -30,14 +30,17 @@ public class ShoeTest {
         }
         String popName = "";
         int numb = 0;
-
+        boolean distinct = true;
         for (Map.Entry<String,Integer> entry : map.entrySet()){
             if(entry.getValue()>numb){
+                distinct = true;
                 popName = entry.getKey();
                 numb = entry.getValue();
+            }else if(entry.getValue()==numb){
+                distinct = false;
             }
-        }
-        if(numb == 1 && map.size()>1){
+        }//numb == 1 && map.size()>1
+        if(!distinct){
             return "";
         } return popName;
     }
@@ -59,14 +62,17 @@ public class ShoeTest {
 
         int popSize = -1;
         int numb = 0;
-
+        boolean distinct = true;
         for (Map.Entry<Integer,Integer> entry : map.entrySet()){
             if(entry.getValue()>numb){
+                distinct = true;
                 popSize = entry.getKey();
                 numb = entry.getValue();
+            }else if(entry.getValue()==numb){
+                distinct = false;
             }
-        }
-        if(numb == 1 && map.size()>1){
+        }//numb == 1 && map.size()>1
+        if(!distinct){
             return -1;
         } return popSize;
     }

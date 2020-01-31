@@ -9,19 +9,11 @@ public class Api {
     public Api(){
         list = new ArrayList<>();
         list.add(new Person("Stian",45));
-        list.add(new Person("Stian",46));
+        list.add(new Person("Lisa",45));
         list.add(new Person("Stian",45));
-        list.add(new Person("Stian",45));
-        list.add(new Person("Stian",45));
-        list.add(new Person("Stian",45));
-        list.add(new Person("Stian",45));
-        list.add(new Person("Per",45));
-        list.add(new Person("Ludvig",42));
-        list.add(new Person("Ludvig",42));
-        list.add(new Person("Ludvig",42));
-        list.add(new Person("Ludvig",42));
         list.add(new Person("Lisa",42));
-        list.add(new Person("Stian",42));
+        list.add(new Person("Lisa",42));
+        list.add(new Person("Stian",46));
     }
 
     public int listSize(){
